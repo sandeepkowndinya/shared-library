@@ -1,6 +1,8 @@
 #!/usr/bin/env groovy
 
-def terraform(task){
+import org.apache.commons.lang.StringUtils
+
+def call(task){
      if (task == "apply"){
      task = task + " --auto-approve"
      }
