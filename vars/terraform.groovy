@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def terraform(task){
      if (task == "apply"){
      task = task + " --auto-approve"
