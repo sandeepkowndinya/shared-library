@@ -1,6 +1,6 @@
 def terraform(task){
-     if (task==apply){
-     task = task + "--auto-approve"
+     if (task == "apply"){
+     task = task + " --auto-approve"
      }
      echo "10 lines of terraform $task"
 }
